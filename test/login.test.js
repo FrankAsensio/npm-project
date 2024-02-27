@@ -1,4 +1,4 @@
-const fetch = require("node-fetch");
+const fetch = require("node-fetch2");
 
 it("Should get a login token",async ()=>{
 
@@ -21,6 +21,6 @@ it("Should get a login token",async ()=>{
     const status = response.status;
 
     expect(status).toBe(200);
-    expect(logintoken.length).toBe(36);
+    expect(token.length).toBe(36);
 
 })
